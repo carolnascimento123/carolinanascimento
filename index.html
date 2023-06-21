@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Carolina Maquiagens</title>
+            <link rel="stylesheet" href="reset.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+            <link rel="stylesheet" href="styles.css">
+
+    <body>  
+        <header class="cabecalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container-botao">
+                <label for="menu">
+                  <span class="menu-hamburguer container-imagem"></span>
+                </label>
+                <ul class="lista-menu">
+                       <li class="lista-menu-titulo">Carolina Maquiagens</li> 
+                        <li class="lista-menu-item">
+                            <a href="#" class="lista-menu-link">Infantil</a>
+                        </li>
+                        <li class="lista-menu-item">
+                            <a href="#" class="lista-menu-link">Mais vendidos</a>
+                        </li>
+                        <li class="lista-menu-item">
+                            <a href="#" class="lista-menu-link">Presentes</a>
+                        </li>
+                        <li class="lista-menu-item">
+                            <a href="#" class="lista-menu-link">Perfumes</a>
+                        </li>
+                </ul>
+                <img class="logo" src="img/logo.jpg" alt="capa">
+            </div>
+            <div class="container">
+                <a href="#"><img src="img/Perfil.svg" alt="Perfil" class="container-imagem"></a>
+                <a href="#"><img src="img/Coracao.svg" alt="compras" class="container-imagem"></a> 
+                <a href="#"><img src="img/Sacola.svg" alt="compras" class="container-imagem"></a> 
+            </div>
+        </header>
+
+        <section class="banner">
+            <h2 class="banner__titulo">A sua maquiagem ideal</h2>
+            <p class="banner__texto">Empodere-se com o simples ato de se maquiar</p>
+            <input type="search" class="banner__pesquisa" placeholder="Faça sua pesquisa">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel-titulo">Garotas Modelos</h2>
+                        <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/make 1.jpeg" alt="emilli"></div>
+            <div class="swiper-slide"><img src="img/make 2.jpeg" alt="carolina"></div>
+            <div class="swiper-slide"><img src="img/make 3.jpeg" alt="maria"></div>
+            <div class="swiper-slide"><img src="img/make 4.jpeg" alt="ana"></div>
+
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                 spaceBetween: 10,
+                 slidesPerView: 3,
+                 pagination: {
+                     el: '.swiper-pagination',
+                     type: 'bullets',
+                 }, 
+            });     
+
+        </script>
+
+    </body>
+
+</html>
